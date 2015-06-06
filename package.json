@@ -4,7 +4,7 @@
   "description": "A starting point for simple JS projects",
   "main": "src/js/main.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/menor/solysombra/issues"
   },
-  "homepage": "https://github.com/menor/solysombra#readme"
+  "homepage": "https://github.com/menor/solysombra#readme",
+  "devDependencies": {
+    "mocha": "*"
+  }
 }
