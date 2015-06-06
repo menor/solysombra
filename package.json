@@ -2,8 +2,9 @@
   "name": "solysombra",
   "version": "0.0.1",
   "description": "A starting point for simple JS projects",
-  "main": "src/js/main.js",
+  "main": "src/js/app.js",
   "scripts": {
+    "lint": "jscs src/js/",
     "test": "mocha"
   },
   "repository": {
@@ -23,7 +24,13 @@
   "homepage": "https://github.com/menor/solysombra#readme",
   "devDependencies": {
     "chai": "*",
+    "jscs": "*",
     "mocha": "*",
     "sinon": "*"
+  },
+  "jscsConfig": {
+    "esnext": true,
+    "fileExtensions": ".js",
+    "preset": "airbnb" 
   }
 }
