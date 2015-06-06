@@ -1,7 +1,5 @@
-var a = 5
+var a = 5;
 
-  function test() {
-                      return True
-  }
-
-
+function test() {
+  return True;
+}

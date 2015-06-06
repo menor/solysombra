@@ -4,11 +4,10 @@
   "description": "A starting point for simple JS projects",
   "main": "src/js/app.js",
   "scripts": {
-
-    "lint": "jscs src/js/ || true", 
-    "lint:watch": "npm run lint -- -w",
-
-    "test": "mocha"
+    "lint": "jscs src/js/ || true",
+    "lint:watch": "onchange src/js/**/*.js -- npm run lint",
+    "test": "mocha",
+    "test:watch": "onchange src/js/**/*.js test/**/* -- npm test" 
   },
   "repository": {
     "type": "git",
@@ -29,11 +28,12 @@
     "chai": "*",
     "jscs": "*",
     "mocha": "*",
+    "onchange": "^1.1.0",
     "sinon": "*"
   },
   "jscsConfig": {
     "esnext": true,
     "fileExtensions": ".js",
-    "preset": "airbnb" 
+    "preset": "airbnb"
   }
 }
