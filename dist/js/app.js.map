@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/js/app.js"],"names":[],"mappings":";;AAAA,IAAI,CAAC,GAAG,CAAC,CAAC;;AAEV,SAAS,IAAI,GAAG;AACd,SAAO,IAAI,CAAC;CACb","file":"app.js","sourcesContent":["let a = 5;\n\nfunction test() {\n  return True;\n}\n"]}

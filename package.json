@@ -4,10 +4,16 @@
   "description": "A starting point for simple JS projects",
   "main": "src/js/app.js",
   "scripts": {
+    "babel": "babel src/js/app.js -o dist/js/app.js --source-maps",
+    "build": "npm run lint && cp src/js/app.js dist/js/app.js",
+    "build:es5": "npm run lint && npm run babel",
+    "clean": "rm -r dist/js/*",
     "lint": "jscs src/js/ || true",
     "lint:watch": "onchange src/js/**/*.js -- npm run lint",
     "test": "mocha",
-    "test:watch": "onchange src/js/**/*.js test/**/* -- npm test" 
+    "test:watch": "onchange src/js/**/*.js test/**/* -- npm test",
+    "watch": "onchange src/ -- npm run build",
+    "watch:es5": "onchange src/ -- npm run build:es5"
   },
   "repository": {
     "type": "git",
@@ -25,10 +31,11 @@
   },
   "homepage": "https://github.com/menor/solysombra#readme",
   "devDependencies": {
+    "babel": "*",
     "chai": "*",
     "jscs": "*",
     "mocha": "*",
-    "onchange": "^1.1.0",
+    "onchange": "*",
     "sinon": "*"
   },
   "jscsConfig": {
