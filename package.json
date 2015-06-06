@@ -4,7 +4,10 @@
   "description": "A starting point for simple JS projects",
   "main": "src/js/app.js",
   "scripts": {
-    "lint": "jscs src/js/",
+
+    "lint": "jscs src/js/ || true", 
+    "lint:watch": "npm run lint -- -w",
+
     "test": "mocha"
   },
   "repository": {
