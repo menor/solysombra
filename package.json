@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/menor/solysombra#readme",
   "devDependencies": {
-    "mocha": "*"
+    "chai": "*",
+    "mocha": "*",
+    "sinon": "*"
   }
 }
