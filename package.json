@@ -1,0 +1,24 @@
+{
+  "name": "solysombra",
+  "version": "0.0.1",
+  "description": "A starting point for simple JS projects",
+  "main": "src/js/main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menor/solysombra.git"
+  },
+  "keywords": [
+    "npm",
+    "es6",
+    "framework"
+  ],
+  "author": "Jose Menor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/menor/solysombra/issues"
+  },
+  "homepage": "https://github.com/menor/solysombra#readme"
+}
