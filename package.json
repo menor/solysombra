@@ -11,6 +11,7 @@
     "lint": "jscs src/js/ || true",
     "lint:watch": "onchange src/js/**/*.js -- npm run lint",
     "test": "mocha",
+    "pretest": "npm run build:es5",
     "test:watch": "onchange src/js/**/*.js test/**/* -- npm test",
     "watch": "onchange src/ -- npm run build",
     "watch:es5": "onchange src/ -- npm run build:es5"
